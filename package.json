@@ -1,7 +1,7 @@
 {
 	"name": "vanilla-calendar-project",
 	"version": "0.0.0",
-	"module": "package/utilities/index.js",
+	"module": "package/utilities/index.mjs",
 	"directories": {
 		"demo": "demo/*",
 		"docs": "docs/*",
