@@ -1,7 +1,7 @@
 {
 	"name": "vanilla-calendar-project",
 	"version": "0.0.0",
-	"module": "package/index.d.ts",
+	"module": "package/src/vanilla-calendar.ts",
 	"directories": {
 		"demo": "demo/*",
 		"docs": "docs/*",
