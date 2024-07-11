@@ -1,7 +1,6 @@
 {
-	"name": "vanilla-calendar-project",
+	"name": "vanilla-calendar-pro",
 	"version": "0.0.0",
-	"homepage": "https://vanilla-calendar.com",
 	"directories": {
 		"demo": "demo/*",
 		"docs": "docs/*",
@@ -10,11 +9,6 @@
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:Mshrzz/vanilla-calendar-pro.git"
-	},
-	"author": {
-		"name": "Yury Uvarov",
-		"email": "uvarov.frontend@gmail.com",
-		"url": "https://frontend.uvarov.tech"
 	},
 	"license": "MIT",
 	"browserslist": {
