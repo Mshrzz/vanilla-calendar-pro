@@ -35,6 +35,9 @@ export interface ISelection {
 	stepHours: number;
 	stepMinutes: number;
 	cancelableDay: boolean;
+	yearLeftMargin?: number;
+	yearRightMargin?: number;
+	allMonths?: boolean;
 }
 
 export interface ISelected {
@@ -83,6 +86,7 @@ export interface IActions {
 	getMonths: ((month: number, HTMLElement: HTMLElement, self: IVanillaCalendar) => void) | null;
 	getYears: ((year: number, HTMLElement: HTMLElement, self: IVanillaCalendar) => void) | null;
 	initCalendar: ((self: IVanillaCalendar) => void) | null;
+	renderYears: ((self: IVanillaCalendar) => void) | null;
 	updateCalendar: ((self: IVanillaCalendar) => void) | null;
 	destroyCalendar: ((self: IVanillaCalendar) => void) | null;
 	showCalendar: ((self: IVanillaCalendar) => void) | null;

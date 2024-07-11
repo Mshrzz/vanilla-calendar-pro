@@ -38,6 +38,7 @@ export default class DefaultOptionsCalendar {
 			stepHours: 1,
 			stepMinutes: 1,
 			cancelableDay: true,
+			allMonths: false,
 		},
 		selected: {
 			dates: undefined,
@@ -73,6 +74,7 @@ export default class DefaultOptionsCalendar {
 		getDays: null,
 		getMonths: null,
 		getYears: null,
+		renderYears: null,
 		initCalendar: null,
 		updateCalendar: null,
 		destroyCalendar: null,

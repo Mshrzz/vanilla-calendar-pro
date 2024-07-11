@@ -31,12 +31,17 @@ const createYears = (self: VanillaCalendar, target?: HTMLElement) => {
 	const templateYearEl = document.createElement('button');
 	templateYearEl.type = 'button';
 
-	for (let i = (self.viewYear as number) - 7; i < (self.viewYear as number) + 8; i++) {
+	const leftYearBorder = self.settings.selection.yearLeftMargin ?? 7;
+	const rightYearBorder = self.settings.selection.yearRightMargin ?? 8;
+
+	for (let i = (self.viewYear as number) - leftYearBorder; i < (self.viewYear as number) + rightYearBorder; i++) {
 		const yearDisabled = i < (self.dateMin as Date).getFullYear() + relationshipID || i > (self.dateMax as Date).getFullYear();
 		const yearEl = createYearEl(self, templateYearEl, selectedYear, yearDisabled, i);
 		yearsEl.append(yearEl);
 		if (self.actions.getYears) self.actions.getYears(i, yearEl, self);
 	}
+
+	if (self.actions.renderYears) self.actions.renderYears(self);
 };
 
 export default createYears;
